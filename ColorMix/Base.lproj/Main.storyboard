@@ -22,47 +22,87 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LFC-Dz-jeq">
-                                <rect key="frame" x="183" y="433" width="49" height="31"/>
+                                <rect key="frame" x="42" y="429" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="GcD-0U-N2o"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="9hz-sE-wqM">
-                                <rect key="frame" x="184" y="525" width="49" height="31"/>
+                                <rect key="frame" x="42" y="514" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="CcH-EX-6Wh"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Bka-J1-jjU">
-                                <rect key="frame" x="183" y="631" width="49" height="31"/>
+                                <rect key="frame" x="42" y="616" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QqB-pv-ikc"/>
                                 </connections>
                             </switch>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="B6q-fG-clI">
-                                <rect key="frame" x="183" y="704" width="49" height="31"/>
+                                <rect key="frame" x="42" y="699" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
                                     <action selector="switchChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="PH0-oa-Ezq"/>
                                 </connections>
                             </switch>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-0.5" maxValue="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="qXQ-r7-wWy">
+                                <rect key="frame" x="179" y="433" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="WFt-Y4-vCZ"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-0.5" maxValue="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="t4E-v9-fOf">
+                                <rect key="frame" x="181" y="514" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="w1s-1d-u5M"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-0.5" maxValue="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="zcE-2w-rdX">
+                                <rect key="frame" x="183" y="616" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YB7-fL-5q7"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-0.5" maxValue="1.5" translatesAutoresizingMaskIntoConstraints="NO" id="geA-sU-7aV">
+                                <rect key="frame" x="185" y="700" width="118" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="sSP-dr-8bP"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98R-DU-kGG">
+                                <rect key="frame" x="177" y="803" width="61" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Reset"/>
+                                <connections>
+                                    <action selector="reset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2l8-kw-Kpy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="blueSlider" destination="geA-sU-7aV" id="19F-lJ-fYL"/>
                         <outlet property="blueSwitch" destination="B6q-fG-clI" id="UWp-vn-wip"/>
                         <outlet property="colorView" destination="Mo0-Ok-SGy" id="YJF-Ys-vb8"/>
+                        <outlet property="greenSlider" destination="zcE-2w-rdX" id="cmX-4h-eyT"/>
                         <outlet property="greenSwitch" destination="Bka-J1-jjU" id="0eq-bg-7ov"/>
+                        <outlet property="redSlider" destination="t4E-v9-fOf" id="YJB-BL-FI5"/>
                         <outlet property="redSwitch" destination="9hz-sE-wqM" id="U6X-jQ-bV1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32" y="23"/>
+            <point key="canvasLocation" x="356.52173913043481" y="240.40178571428569"/>
         </scene>
     </scenes>
     <resources>

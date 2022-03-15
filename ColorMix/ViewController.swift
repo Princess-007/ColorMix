@@ -41,19 +41,51 @@ func updateColor() {
     var red: CGFloat = 0
     var green: CGFloat = 0
     var blue: CGFloat = 0
+// changes from pg 333.
     if redSwitch.isOn {
-        red = 1
+        red = CGFloat(redSlider.value)
     }
     if greenSwitch.isOn {
-        green = 1
+        green = CGFloat(greenSlider.value)
+        
     }
     if blueSwitch.isOn {
-        blue = 1
+        blue = CGFloat(blueSlider.value)
+        
     }
 
     let color = UIColor(red: red, green: green,
        blue: blue, alpha: 1)
     colorView.backgroundColor = color
     }
+// connecting outlets and actions pg 332
+    @IBOutlet var redSlider: UISlider!
+    
+    @IBOutlet var greenSlider: UISlider!
+    
+    @IBOutlet var blueSlider: UISlider!
+    
+//connecting the sliders to actions pg 333, then control-drag from the circle icon in the gutter by the new action to each slider
+    
+    @IBAction func sliderChanged(_ sender: Any) {
+    }
+    
+// created the reset button pg 337
+    
+    @IBAction func reset(_ sender: Any) {
+        redSlider.value = 1
+        greenSlider.value = 1
+        blueSlider.value = 1
+        redSwitch.isOn = false
+        greenSwitch.isOn = false
+        blueSwitch.isOn = false
+        
+        updateColor()
+    }
+ 
 
+    }
 }
+
+
+
