@@ -19,7 +19,16 @@ class ViewController: UIViewController {
 // updateColor()
         
         // Do any additional setup after loading the view.
+        
+        colorView.layer.borderWidth = 5
+        colorView.layer.cornerRadius = 20
+        colorView.layer.borderColor =  UIColor.black.cgColor
+        
+// add a call so that the sliders are "disabled" correctly when the app first launches - pg 344.
+        
     }
+
+
 // added the switch pg 320
     @IBAction func switchChanged(_ sender: UISwitch) {
 // to make the switch behave like a real switch pg 321
@@ -82,10 +91,18 @@ func updateColor() {
         
         updateColor()
     }
- 
+    
+// disabling sliders pg 344
+    
+    func updateControls() {
+        redSlider.isEnabled = redSwitch.isOn
+        greenSlider.isEnabled = greenSwitch.isOn
+        blueSlider.isEnabled = blueSwitch.isOn
+updateColor()
+    }
 
     }
-}
+
 
 
 

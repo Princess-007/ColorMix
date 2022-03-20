@@ -24,6 +24,7 @@
 		499B690D27DABCA60049891B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		499B691027DABCA60049891B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		499B691227DABCA60049891B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49C9810D27E13FC9005E9865 /* ColorMix.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ColorMix.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +57,7 @@
 		499B690327DABCA50049891B /* ColorMix */ = {
 			isa = PBXGroup;
 			children = (
+				49C9810D27E13FC9005E9865 /* ColorMix.entitlements */,
 				499B690427DABCA50049891B /* AppDelegate.swift */,
 				499B690627DABCA50049891B /* SceneDelegate.swift */,
 				499B690827DABCA50049891B /* ViewController.swift */,
@@ -287,8 +289,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ColorMix/ColorMix.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25M37G78M6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ColorMix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -314,8 +318,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ColorMix/ColorMix.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 25M37G78M6;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ColorMix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
